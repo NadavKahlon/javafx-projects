@@ -8,3 +8,5 @@ This repository contains selected JavaFX projects I worked on as part of an adva
 * Conncet-4 game
 
 Each directory in this repository has its own README file, describing the associated project in more depth. Feel free to browse them!
+
+Note: all projects were developed for Java 8.
