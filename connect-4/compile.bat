@@ -1,0 +1,2 @@
+javac connect4Game\Connect4Game.java connect4Game\Connect4GameController.java
+pause

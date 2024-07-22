@@ -1,0 +1,2 @@
+javac chatRoomProject\*.java
+pause

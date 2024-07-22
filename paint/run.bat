@@ -1,0 +1,2 @@
+java paintApp.PaintApp
+pause

@@ -1,0 +1,2 @@
+java dictionaryProject.DictionaryApp
+pause

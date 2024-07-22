@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionaryProject.MainWindowController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#newPressed" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#loadPressed" text="Load" />
+                  <MenuItem mnemonicParsing="false" onAction="#savePressed" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#saveAsPressed" text="Save As..." />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addEntryPressed" text="Add Entry" />
+                  <MenuItem mnemonicParsing="false" onAction="#editEntryPressed" text="Edit Entry" />
+                  <MenuItem mnemonicParsing="false" onAction="#deleteEntryPressed" text="Delete Entry" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#HowToUsePressed" text="How to Use" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label fx:id="currPathLabel" text="Associated file" BorderPane.alignment="CENTER_LEFT">
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin>
+      </Label>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </BorderPane.margin>
+         <children>
+            <Label fx:id="titleLabel" text="Title">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font></Label>
+            <Label fx:id="descriptionLabel" style="-fx-wrap-text: true; -fx-font-family: Arial;" text="Description">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </center>
+   <left>
+      <VBox maxHeight="1.7976931348623157E308" spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="searchTermTextField" focusTraversable="false" promptText="Search term..." />
+            <ListView fx:id="entriesListView" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

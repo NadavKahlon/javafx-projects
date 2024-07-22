@@ -1,0 +1,2 @@
+javac dictionaryProject\Dictionary.java dictionaryProject\DictionaryApp.java dictionaryProject\DictionaryEntry.java dictionaryProject\EditEntryWindowController.java dictionaryProject\MainWindowController.java
+pause
